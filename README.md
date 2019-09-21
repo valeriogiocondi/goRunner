@@ -41,4 +41,6 @@ You can set:
    * we don't want to watch .DS_Sore and .txt files
    * we don't want to watch ./goRunner/ and /files/dir-2/dir-2-1/ directories
    
+   ## Custom packages
    
+   Remeber to move packages directory *src/packages/* into your Golang package path $GOPATH/src/ [More infos](https://github.com/golang/go/wiki/SettingGOPATH)
