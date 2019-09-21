@@ -17,8 +17,6 @@ You can set:
   * types of file you don't want to watch
   * directories you don't want to watch
   
-  
- Example:
    
 ```
    {
