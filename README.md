@@ -13,13 +13,12 @@ This is the main, and only, configuration file.
 
 You can set:
 
-  1. list of tasks you want to execute
-  2. types of file you don't want to watch
-  3. directories you don't want to watch
+  *. list of tasks you want to execute
+  *. types of file you don't want to watch
+  *. directories you don't want to watch
   
   
  Example:
- 
    
 ```
    {
@@ -40,8 +39,8 @@ You can set:
 ```
    
  
-   1. the only task we want to execute is helloWorld.py
-   2. we don't want to watch .DS_Sore and .txt files
-   3. we don't want to watch ./goRunner/ and /files/dir-2/dir-2-1/ directories
+   *. the only task we want to execute is helloWorld.py
+   *. we don't want to watch .DS_Sore and .txt files
+   *. we don't want to watch ./goRunner/ and /files/dir-2/dir-2-1/ directories
    
    
