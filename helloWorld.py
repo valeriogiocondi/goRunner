@@ -1,2 +1,2 @@
 newLine = '\n\n\n'
-print(newLine + 'Hello world in Python 4!' + newLine)
+print(newLine + 'Hello world in Python!' + newLine)
