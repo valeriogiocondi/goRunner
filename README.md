@@ -20,7 +20,8 @@ You can set:
   
  Example:
  
-   ---
+   
+```
    {
     "tasklist": [
         "python helloWorld.py"
@@ -35,7 +36,8 @@ You can set:
         "./files/dir-2/dir-2-1/"
       ]
     }
-   ---
+   
+```
    
  
    1. the only task we want to execute is helloWorld.py
