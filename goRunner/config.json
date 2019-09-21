@@ -1,0 +1,18 @@
+{
+  "author": "Valerio Giocondi",
+  "license": "MIT",
+  "name": "goRunner",
+	"tasklist": [
+
+		"python helloWorld.py"
+	],
+	"exceptFile": [
+
+		"DS_Store",
+		"txt"
+	],
+	"exceptDirectories": [
+		"./goRunner/",
+		"./files/dir-2/dir-2-1/"
+	]
+}
