@@ -2,7 +2,6 @@ package taskRunner
 
 import (
 	"time"
-
 	"packages/vars"
 	"packages/config"
 	"packages/filesListPkg"

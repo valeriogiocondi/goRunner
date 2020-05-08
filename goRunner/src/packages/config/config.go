@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	
 	"packages/vars"
 	"packages/filesListPkg"
 )
@@ -23,6 +22,10 @@ type fileConfig struct {
 
 func Load() {
 
+	/* 
+	 *	Load all files and config.json
+	 *
+	 */
 	loadFilesList(vars.InitPath)
 	loadConfig(vars.TaskList, vars.ExceptionFileExtension, vars.ExceptionDirectories)
 
@@ -46,8 +49,10 @@ func loadConfig(taskList []string, exceptionFileExtension []string, exceptionDir
         contentFile += scanner.Text();
     }
 
-    // Save config.json into global data structure
-
+	/* 
+	 *	Save config.json into global data structure
+	 *
+	 */
     err = json.Unmarshal([]byte(contentFile), &configOptions)
 	
 	if (err != nil) {

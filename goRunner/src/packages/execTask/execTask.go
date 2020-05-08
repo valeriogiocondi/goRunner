@@ -7,8 +7,7 @@ import (
 	"os/exec"
 	"runtime"
 	"strings"
-	"time"
-
+	"time" 
 	"packages/vars"
 )
 
@@ -16,7 +15,10 @@ var taskExecution []*exec.Cmd
 
 func ExecTask() {	
 
-	// KILL ALL PREVIOUS TASK EXECUTED AND CLEAR ARRAY
+	/* 
+	 *	KILL ALL PREVIOUS TASK EXECUTED AND CLEAR ARRAY
+	 *
+	 */
 	for _, item := range taskExecution {
 
 	  err := item.Process.Kill()
@@ -28,21 +30,28 @@ func ExecTask() {
 	taskExecution = nil
 
 
-	// CLEAR TERMINAL
-	cmd := exec.Command("clear") //Unix example
+	/* 
+	 *	CLEAR TERMINAL
+	 *
+	 */
+	
+	//Unix example
+	cmd := exec.Command("clear") 
 	
 	if (runtime.GOOS == "windows") {
 
-	  cmd = exec.Command("cmd", "/c", "cls") //Windows example, its tested 
+	  //Windows example, its tested 
+	  cmd = exec.Command("cmd", "/c", "cls") 
 	}
 	cmd.Stdout = os.Stdout
-  cmd.Run()
-  cmd.Process.Kill()
+  	cmd.Run()
+  	cmd.Process.Kill()
 
-	// EXEC ALL TASKS LIST IN config.json
+	/* 
+	 *	EXEC ALL TASKS LIST IN config.json
+	 *
+	 */
 	for _, item := range vars.TaskList {
-
-
 
 		var stderr bytes.Buffer
 		var arrayTask []string = strings.Split(item, " ")
@@ -53,7 +62,7 @@ func ExecTask() {
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = &stderr
 
-	  err := cmd.Run()
+	  	err := cmd.Run()
 
 		if err != nil {
 
@@ -61,7 +70,10 @@ func ExecTask() {
 			fmt.Println("\n\n"+stderr.String())
 		}
 
-		// Need pointers to the task in order to kill at next save
+		/* 
+		 *	Insert pointer into taskExecution. We'll have to kill the processes
+		 *
+		 */
 		taskExecution = append(taskExecution, cmd)
 	}
 
