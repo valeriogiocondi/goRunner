@@ -52,7 +52,7 @@ You can set:
    
    **go run ./goRunner/app.go**
    
-   Remeber to move packages directory *./src/packages/* into your Golang package path **$GOPATH/src/** [(More infos)](https://github.com/golang/go/wiki/SettingGOPATH).
+   Remeber to move packages directory **./src/packages/** into your Golang package path **$GOPATH/src/** [(More infos)](https://github.com/golang/go/wiki/SettingGOPATH).
    
    
    ## License
