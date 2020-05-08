@@ -5,8 +5,8 @@ A task runner for everything
 
 ## Introduction
 
-This is a task runner written in [Golang](https://golang.org/).
-You don't need to know write in Golang to use goRunner.
+This is a task runner developed in [Golang](https://golang.org/).
+You don't need to know Golang to use goRunner.
 
 You can use goRunner alongside your project, no matter what program language you use, you just have to set config.json properly.
 
