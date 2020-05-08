@@ -10,7 +10,7 @@ You don't need to know Golang to use goRunner.
 
 You can use goRunner alongside your project, no matter what program language you use, you just have to set config.json properly.
 
-In this example goRunner is set to execute a simple python script everytime you edit and save example.py, or some other files in *src* directory.
+In this example goRunner is set to execute a simple python script everytime you edit and save example.py, or some other files in **./files** directory.
 
 
 ## Config.json
@@ -48,9 +48,11 @@ You can set:
    * we don't want to watch ./goRunner/ and /files/dir-2/dir-2-1/ directories
    
    
-   ## Custom packages
+   ## How to run
    
-   Remeber to move packages directory *src/packages/* into your Golang package path $GOPATH/src/ [(More infos)](https://github.com/golang/go/wiki/SettingGOPATH).
+   **go run ./goRunner/app.go**
+   
+   Remeber to move packages directory *./src/packages/* into your Golang package path **$GOPATH/src/** [(More infos)](https://github.com/golang/go/wiki/SettingGOPATH).
    
    
    ## License
